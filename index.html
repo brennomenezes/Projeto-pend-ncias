@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+     <!-- CSS PROJETO -->
+    <link rel="stylesheet" href="style.css">
+    <title>Todo avançado</title>
+</head>
+<body>
+   <main>
+
+        <div class="container-pai">   
+            <header class="header">
+                 <h1>Todo avançado</h1>
+            </header>
+            
+            
+               <div class="linha"></div>
+        <div>
+
+        <div class="formularios">
+           
+            <form id="formulario"> 
+                    <p>Adicione sua tarefa</p>
+                <div class="controle-formulario"> 
+                    <input type="text" id="input" placeholder="O que você vai fazer ?"> 
+                    <button type="submit">
+                        <i class="fa-thin fa-plus"></i>
+                    </button>
+                </div>
+            </form> 
+
+            
+            <form id="editar-formulario" class="hide">
+                <div class="controle-formulario">
+                    <p>Edite sua tarefa</p>
+                    <input type="text" id="input" />
+                    <button type="submit">
+                        <i class="fa-solid fa-check-double"></i>
+                     </button>
+                 </div>
+                 <button id="cancelar-edicao">Cancelar</button>
+               
+                 <div class="linha"></div>
+            </form>
+
+                
+
+            <form>
+              <div id="toolbar" class="toolbar">
+                <div id="pesquisa">
+                    <p>Pesquisar</p>
+                    <input type="text" id="forms" placeholder="Buscar"> 
+                    <button type="submit">
+                        <i class="fa-solid fa-delete-left"></i>
+                    </button>
+                </div>     
+
+                <div id="filtrar">
+                    <p>Filtrar:</p>
+                    <select id="filtros">
+                        <option value="all">Todos</option>
+                        <option value="done">Feitos</option>
+                        <option value="todo">A fazer</option>
+                      </select> 
+                </div>
+              </div>
+            </form>    
+
+
+            <div id="tarefas-lista">
+
+            </div> 
+
+         </div><!--formularios-->  
+        </div> <!--container-pai-->
+         
+        
+        <div id="listas"></div>
+  </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
