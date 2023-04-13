@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    color: #333;
+  }
+
+  body {
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+    p{
+    font-family: Verdana;
+    color: #333;
+    font-weight: bold;
+}
+
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+  }
+
+  button:hover {
+    background-color: #102f5e;
+  }
+  
+  button:hover > i {
+    color: #fff;
+  }
+  
+  button i {
+    pointer-events: none;
+    color: #102f5e;
+    font-weight: bold;
+  }
+
+  input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+.header{
+    text-align: center;
+    
+}
+
+.container-pai{
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column; 
+     
+      
+}
+
+.formularios{
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.toolbar{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between ;
+}
+
+.hide{
+    display: none;
+}
+
+.tarefas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+  }
+  
+  .tarefas h3 {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+  
+  .tarefas button {
+    margin-left: 0.4rem;
+  }
+
+  .done {
+    background: #395169;
+  }
+  
+  .done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+  }
